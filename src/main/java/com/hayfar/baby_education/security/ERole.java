@@ -1,0 +1,6 @@
+package com.hayfar.baby_education.security;
+
+public enum ERole {
+    ROLE_USER,
+    ROLE_ADMIN
+}
