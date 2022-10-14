@@ -18,15 +18,12 @@ public class UserService {
     }
 
     public ResponseEntity<User> addUser(User user){
-        user.setUserId(user.getUserId());
-        user.setName(user.getName());
-        user.setLastName(user.getLastName());
         userRepository.save(user);
         return ResponseEntity.ok(user);
     }
     public ResponseEntity<User> updateUser(User user){
-        user.setName(user.getName());
-        user.setLastName(user.getLastName());
+        user.setUserName(user.getUserName());
+        user.setPassword(user.getPassword());
         return ResponseEntity.ok(user);
     }
 
@@ -42,4 +39,8 @@ public class UserService {
     }
 
 
+    public User getUserByUserName(String username) {
+
+        return userRepository.findByUserName(username);
+    }
 }

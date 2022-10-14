@@ -18,7 +18,6 @@ public class AnimalsController {
     }
 
     @PostMapping("/add")
-//    @PreAuthorize("hasRole('USER')")
     public Animals addAnimal(@RequestBody Animals animals){
         return animalsService.addAnimal(animals);
     }

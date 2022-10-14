@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class AnimalsService {
@@ -24,7 +23,7 @@ public class AnimalsService {
         editAnimals.setDescription(animals.getDescription());
 
         animalsRepository.save(editAnimals);
-        return editAnimals;
+        return animals;
     }
 
     public List<Animals> getAllAnimals() {
