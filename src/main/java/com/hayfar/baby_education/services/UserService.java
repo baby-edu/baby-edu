@@ -2,7 +2,7 @@ package com.hayfar.baby_education.services;
 
 import com.hayfar.baby_education.entity.User;
 import com.hayfar.baby_education.repositories.UserRepository;
-import org.springframework.http.ResponseEntity;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,36 +11,49 @@ import java.util.Optional;
 @Service
 public class UserService {
 
-    private final UserRepository userRepository;
-
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
-    public ResponseEntity<User> addUser(User user){
-        userRepository.save(user);
-        return ResponseEntity.ok(user);
-    }
-    public ResponseEntity<User> updateUser(User user){
-        user.setUserName(user.getUserName());
-        user.setPassword(user.getPassword());
-        return ResponseEntity.ok(user);
-    }
-
-    public List<User> getAllUser(){
-        return userRepository.findAll();
-    }
-    public String deleteUser(Long userId){
-         userRepository.deleteById(userId);
-         return "Silindi"+ userId;
-    }
-    public Optional<User> findUser(Long userId){
-        return userRepository.findById(userId);
-    }
+	UserRepository userRepository;
 
 
-    public User getUserByUserName(String username) {
+	public UserService(UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
 
-        return userRepository.findByUserName(username);
-    }
+	public List<User> getAllUsers() {
+		return userRepository.findAll();
+	}
+
+	public User saveOneUser(User newUser) {
+		return userRepository.save(newUser);
+	}
+
+	public User getOneUserById(Long userId) {
+		return userRepository.findById(userId).orElse(null);
+	}
+
+	public User updateOneUser(Long userId, User newUser) {
+		Optional<User> user = userRepository.findById(userId);
+		if(user.isPresent()) {
+			User foundUser = user.get();
+			foundUser.setUserName(newUser.getUserName());
+			foundUser.setPassword(newUser.getPassword());
+			userRepository.save(foundUser);
+			return foundUser;
+		}else
+			return null;
+	}
+
+	public void deleteById(Long userId) {
+		try {
+		userRepository.deleteById(userId);
+		}catch(EmptyResultDataAccessException e) { //user zaten yok, db'den empty result gelmiş
+			System.out.println("User "+userId+" doesn't exist"); //istersek loglayabiliriz
+		}
+	}
+
+	public User getOneUserByUserName(String userName) {
+		return userRepository.findByUserName(userName);
+	}
+
+	
+	
 }
