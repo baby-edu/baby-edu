@@ -27,9 +27,8 @@ public class AnimalsController {
         animalsService.deleteAnimal(animalId);
         return ResponseEntity.ok("Silindi : " + animalId);
     }
-
-
-    @GetMapping("/getAll")
+    
+    @GetMapping
     public List<Animal> getAllAnimals(){
         return animalsService.getAllAnimals();
     }
