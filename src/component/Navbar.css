@@ -1,0 +1,14 @@
+.navbar {
+  background-color: rgba(0, 0, 0, .2);
+}
+.navbar-brand , .nav-link{
+  text-transform: uppercase;
+}
+.nav-link {
+  font-size: 1rem;
+  transition: all 1s;
+}
+.nav-link:hover {
+  background-color: antiquewhite;
+  font-size: 1.2rem;
+}

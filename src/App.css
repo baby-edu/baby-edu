@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nanum+Pen+Script&display=swap');
+
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(231, 231, 134), 
+  rgb(163, 199, 163),rgb(196, 171, 196),rgb(240, 139, 155));
+  background-size: 500% 500%;
+  animation: backgroundAnime 5s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes backgroundAnime {
+  0% {background-position: 0%;}
+  100% {background-position: 100%;}
+}
+h2 {
+  text-align: center;
+  margin-top: 1rem;
+  color:white;
+  font-family: 'Bungee Shade', cursive;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+
+}
