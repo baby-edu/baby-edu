@@ -4,6 +4,7 @@ import './App.css';
 //componetns
 // import Content from './component/Content';
 import Navbar from './component/Navbar';
+import İletisim from './component/İletisim';
 //pages 
 import Anasayfa from './pages/Anasayfa';
 import Aile from './pages/Aile';
@@ -14,6 +15,7 @@ import Yapilar from './pages/Yapilar';
 
 
 function App() {
+
   return (
     <BrowserRouter>
     <Navbar></Navbar>
@@ -25,6 +27,7 @@ function App() {
       <Route path='hayvanlar' element={<Hayvanlar/>}></Route>
       <Route path='aile'  element={<Aile/>} ></Route>
       <Route path='yapilar' element={<Yapilar/>}></Route>
+      <Route path='iletisim' element={<İletisim/>}></Route>
       </Routes>
     </BrowserRouter>
 
