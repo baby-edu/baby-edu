@@ -11,10 +11,4 @@ public class BabyEducationApplication {
     public static void main(String[] args) {
         SpringApplication.run(BabyEducationApplication.class, args);
     }
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
-
 }

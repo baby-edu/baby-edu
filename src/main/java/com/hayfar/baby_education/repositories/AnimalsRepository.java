@@ -1,15 +1,11 @@
 package com.hayfar.baby_education.repositories;
 
-import com.hayfar.baby_education.entity.Animals;
+import com.hayfar.baby_education.entity.Animal;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
-public interface AnimalsRepository extends JpaRepository<Animals, Long> {
+public interface AnimalsRepository extends JpaRepository<Animal, Long> {
     /*@Query( value = "select * from bills  where payment=false and user_id= :userId" ,nativeQuery = true)
     List<Bill> findAllFalseByUserId(@Param("userId") Long userId);
 

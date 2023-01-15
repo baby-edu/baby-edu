@@ -1,13 +1,11 @@
 package com.hayfar.baby_education.services;
 
-import com.hayfar.baby_education.entity.Animals;
+import com.hayfar.baby_education.entity.Animal;
 import com.hayfar.baby_education.repositories.AnimalsRepository;
-import com.hayfar.baby_education.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class AnimalsService {
@@ -18,20 +16,20 @@ public class AnimalsService {
         this.animalsRepository = animalsRepository;
     }
 
-    public Animals addAnimal(Animals animals) {
-        Animals editAnimals = new Animals();
+    public Animal addAnimal(Animal animals) {
+        Animal editAnimals = new Animal();
         editAnimals.setName(animals.getName());
         editAnimals.setDescription(animals.getDescription());
-
+        editAnimals.setImage(animals.getImage());
         animalsRepository.save(editAnimals);
-        return editAnimals;
+        return animals;
     }
 
-    public List<Animals> getAllAnimals() {
+    public List<Animal> getAllAnimals() {
         return animalsRepository.findAll();
     }
 
-    public Optional<Animals> findAnimal(Long billId) {
+    public Optional<Animal> findAnimal(Long billId) {
         return animalsRepository.findById(billId);
     }
 
