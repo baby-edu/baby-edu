@@ -69,7 +69,7 @@ public class SecurityConfig {
         httpSecurity
                 .cors()
                 .and()
-                .csrf().and()
+                .csrf().disable()
                 .exceptionHandling().authenticationEntryPoint(handler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
@@ -81,7 +81,7 @@ public class SecurityConfig {
                 .permitAll()
                 .antMatchers(HttpMethod.GET, "/admin")
                 .permitAll()
-                .antMatchers("/auth/**")
+                .antMatchers(HttpMethod.POST, "/auth/**")
                 .permitAll()
                 .anyRequest().authenticated();
 

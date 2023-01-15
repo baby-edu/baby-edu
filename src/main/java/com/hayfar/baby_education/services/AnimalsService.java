@@ -20,6 +20,7 @@ public class AnimalsService {
         Animal editAnimals = new Animal();
         editAnimals.setName(animals.getName());
         editAnimals.setDescription(animals.getDescription());
+        editAnimals.setImage(animals.getImage());
         animalsRepository.save(editAnimals);
         return animals;
     }
