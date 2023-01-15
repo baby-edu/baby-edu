@@ -12,6 +12,7 @@ import Bitkiler from './pages/Bitkiler';
 import Gezegenler from './pages/Gezegenler';
 import Hayvanlar from './pages/Hayvanlar';
 import Yapilar from './pages/Yapilar';
+import AnimalDeneme from './pages/AnimalDeneme';
 
 
 function App() {
@@ -24,16 +25,13 @@ function App() {
       <Route path='aile'  element={<Aile/>} ></Route>
       <Route path='bitkiler' element={<Bitkiler/>}></Route>
       <Route path='gezegenler'  element={<Gezegenler/>} ></Route>
-      <Route path='hayvanlar' element={<Hayvanlar/>}></Route>
+      <Route path='/hayvanlar' element={<AnimalDeneme/>}></Route>
       <Route path='aile'  element={<Aile/>} ></Route>
       <Route path='yapilar' element={<Yapilar/>}></Route>
       <Route path='iletisim' element={<İletisim/>}></Route>
       </Routes>
     </BrowserRouter>
 
-
-
-  
   );
 }
 

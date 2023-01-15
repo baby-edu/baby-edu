@@ -20,14 +20,6 @@ function Content() {
                 </p>
               </div>
             </div>
-
-
-
-
-
-
-
-
           </div>
 
 
