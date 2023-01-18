@@ -10,9 +10,8 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "plants")
-public class Plant {
-
+@Table(name = "families")
+public class Family {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

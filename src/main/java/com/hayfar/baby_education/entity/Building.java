@@ -10,8 +10,8 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "plants")
-public class Plant {
+@Table(name = "Buildings")
+public class Building {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,3 +20,4 @@ public class Plant {
     private String description;
     private String image;
 }
+

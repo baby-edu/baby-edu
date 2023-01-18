@@ -19,6 +19,7 @@ public class PlantService {
         Plant editPlants = new Plant();
         editPlants.setName(plants.getName());
         editPlants.setDescription(plants.getDescription());
+        editPlants.setImage(plants.getImage());
         plantsRepository.save(editPlants);
         return plants;
     }
