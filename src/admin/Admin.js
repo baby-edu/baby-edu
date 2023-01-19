@@ -8,7 +8,7 @@ export default class Admin extends Component {
       <div className='container mt-3'>
         <Form>
         <FormGroup row>
-          <Label for="exampleİnput" sm={2}>Name</Label>
+          <Label for="exampleInput" sm={2}>Name</Label>
           <Col sm={10}>
             <Input type="email" name="inputName" id="exampleİnput" placeholder="with a placeholder" />
           </Col>
