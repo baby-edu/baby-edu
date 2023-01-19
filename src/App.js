@@ -4,15 +4,17 @@ import './App.css';
 //componetns
 // import Content from './component/Content';
 import Navbar from './component/Navbar';
-import İletisim from './component/İletisim';
 //pages 
-import Anasayfa from './pages/Anasayfa';
-import Aile from './pages/Aile';
-import Bitkiler from './pages/Bitkiler';
-import Gezegenler from './pages/Gezegenler';
-import Hayvanlar from './pages/Hayvanlar';
-import Yapilar from './pages/Yapilar';
-import AnimalDeneme from './pages/AnimalDeneme';
+import Animal from './pages/Animal';
+import Plants from'./pages/Plants';
+import Planets from './pages/Planets';
+import Sbuildings from './pages/Sbuildings';
+import Family from './pages/Family';
+import Home from './pages/Home';
+import Admin from './admin/Admin';
+
+
+
 
 
 function App() {
@@ -21,14 +23,13 @@ function App() {
     <BrowserRouter>
     <Navbar></Navbar>
       <Routes>
-      <Route index element={<Anasayfa/>} ></Route>
-      <Route path='aile'  element={<Aile/>} ></Route>
-      <Route path='bitkiler' element={<Bitkiler/>}></Route>
-      <Route path='gezegenler'  element={<Gezegenler/>} ></Route>
-      <Route path='/hayvanlar' element={<AnimalDeneme/>}></Route>
-      <Route path='aile'  element={<Aile/>} ></Route>
-      <Route path='yapilar' element={<Yapilar/>}></Route>
-      <Route path='iletisim' element={<İletisim/>}></Route>
+      <Route index element={<Home/>} ></Route>
+      <Route path='/family'  element={<Family/>} ></Route>
+      <Route path='/plants' element={<Plants/>}></Route>
+      <Route path='/planets'  element={<Planets/>} ></Route>
+      <Route path='/animals' element={<Animal/>}></Route>
+      <Route path='/sbuildings' element={<Sbuildings/>}></Route>
+      <Route path='/admin' element={<Admin/>}></Route>
       </Routes>
     </BrowserRouter>
 

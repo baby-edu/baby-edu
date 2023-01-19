@@ -8,10 +8,10 @@ function Content() {
       <div className='container'>
         <div className='row'>
           {/* tekrar edilcek bölüm */}
-          <div className='col-sm-12 col-lg-4 col-md-6'>
+          <div className='col-sm-12 col-lg-4 col-md-6 card'>
             <div className='content'>
               <div className='card-img'>
-                <img src='https://i.pinimg.com/originals/6e/c5/e7/6ec5e78480b106c36671956d985a4470.jpg'></img>
+                <img src=''></img>
               </div>
               <div>
                 <h3 className='fs-2 contentName'>Hayvan ad</h3>

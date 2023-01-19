@@ -18,19 +18,22 @@ function Navbar() {
          <Link to="/" className="nav-link">Anasayfa</Link>
         </li>
         <li className="nav-item">
-         <Link to="aile"  className="nav-link">aile</Link>
+         <Link to="/family"  className="nav-link">aile</Link>
         </li>
         <li className="nav-item">
-         <Link to="hayvanlar"  className="nav-link">hayvanlar</Link>
+         <Link to="/animals"  className="nav-link">hayvanlar</Link>
         </li>
         <li className="nav-item">
-         <Link to="bitkiler"  className="nav-link">bitkiler</Link>
+         <Link to="/plants"  className="nav-link">bitkiler</Link>
         </li>
         <li className="nav-item">
-         <Link to="yapilar"  className="nav-link">yapılar</Link>
+         <Link to="/sbuildings"  className="nav-link">yapılar</Link>
         </li>
         <li className="nav-item">
-         <Link to="gezegenler"  className="nav-link">gezegenler</Link>
+         <Link to="/planets"  className="nav-link">gezegenler</Link>
+        </li>
+        <li className="nav-item">
+         <Link to="/admin"  className="nav-link">Admin</Link>
         </li>
        
       </ul>
