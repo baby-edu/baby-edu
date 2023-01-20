@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nanum+Pen+Script&display=swap');
-
-
 body {
   margin: 0;
   width: 100%;
@@ -14,15 +11,4 @@ body {
 @keyframes backgroundAnime {
   0% {background-position: 0%;}
   100% {background-position: 100%;}
-}
-h2 {
-  text-align: center;
-  margin-top: 1rem;
-  color:white;
-  font-family: 'Bungee Shade', cursive;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 4rem;
-  font-weight: 900;
-  text-transform: uppercase;
-
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Footer from '../component/Footer';
 import '../component/Content.css';
+import Footer from '../component/Footer';
+
 
 export default class Family extends Component {
     constructor(props) {

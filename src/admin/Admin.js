@@ -3,6 +3,7 @@ import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap
 
 
 export default class Admin extends Component {
+  
   render() {
     return (
       <div className='container mt-3'>
