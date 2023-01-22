@@ -17,11 +17,7 @@ public class AnimalsService {
     }
 
     public Animal addAnimal(Animal animals) {
-        Animal editAnimals = new Animal();
-        editAnimals.setName(animals.getName());
-        editAnimals.setDescription(animals.getDescription());
-        editAnimals.setImage(animals.getImage());
-        animalsRepository.save(editAnimals);
+        animalsRepository.save(animals);
         return animals;
     }
 

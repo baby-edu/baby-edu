@@ -17,7 +17,7 @@ public class PlanetService {
     }
 
     public Planet addPlanet(Planet planet) {
-
+        planetRepository.save(planet);
         return planet;
     }
 

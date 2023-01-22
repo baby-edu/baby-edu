@@ -17,11 +17,7 @@ public class BuildingService {
     }
 
     public Building addBuilding(Building building) {
-        Building editBuilding = new Building();
-        editBuilding.setName(building.getName());
-        editBuilding.setDescription(building.getDescription());
-        editBuilding.setImage(building.getImage());
-        buildingRepository.save(editBuilding);
+        buildingRepository.save(building);
         return building;
     }
 

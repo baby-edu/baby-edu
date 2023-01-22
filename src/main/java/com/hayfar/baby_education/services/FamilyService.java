@@ -16,6 +16,7 @@ public class FamilyService {
     }
 
     public Family addFamily(Family family) {
+        familyRepository.save(family);
         return family;
     }
 
