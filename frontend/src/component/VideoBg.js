@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../component/Content.css';
+import './Content.css';
 import Videom from './video/bg.mp4'
 import 'animate.css';
 

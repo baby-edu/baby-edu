@@ -16,11 +16,11 @@ function Footer() {
             <div id='categories' className="col-sm-12 col-md-6 col-lg-4 box">
               <h3>Categories</h3>
               <ul >
-                <li ><a href='/family'>Aile</a></li>
+                <li ><a href='/frontend/src/pages/Family'>Aile</a></li>
                 <li ><a href='/animals'>Hayvanlar</a></li>
-                <li ><a href='/plants'>Bitkiler</a></li>
-                <li ><a href='/buildings'>Yapılar</a></li>
-                <li ><a href='/planets'>Gezegenler</a></li>
+                <li ><a href='/frontend/src/pages/Plants'>Bitkiler</a></li>
+                <li ><a href='/frontend/src/pages/Buildings'>Yapılar</a></li>
+                <li ><a href='/frontend/src/pages/Planets'>Gezegenler</a></li>
               </ul>
             </div>
             <div id='about' className="col-sm-12 col-md-6 col-lg-4 box">

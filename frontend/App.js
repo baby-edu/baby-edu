@@ -2,14 +2,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 //componetns
-import Navbar from './component/Navbar';
+import Navbar from './src/component/Navbar';
 //pages 
-import Animal from './pages/Animal';
-import Plants from'./pages/Plants';
-import Planets from './pages/Planets';
-import Buildings from './pages/Buildings';
-import Family from './pages/Family';
-import Home from './pages/Home';
+import Animal from './src/pages/Animal';
+import Plants from './src/pages/Plants';
+import Planets from './src/pages/Planets';
+import Buildings from './src/pages/Buildings';
+import Family from './src/pages/Family';
+import Home from './src/pages/Home';
 
 
 function App() {

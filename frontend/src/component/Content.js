@@ -11,7 +11,7 @@ function Content() {
           <div className='col-sm-12 col-lg-4 col-md-6 card'>
             <div className='content'>
               <div className='card-img'>
-                <img src=''></img>
+                <img src='frontend/src/component'></img>
               </div>
               <div>
                 <h3 className='fs-2 contentName'>Hayvan ad</h3>
