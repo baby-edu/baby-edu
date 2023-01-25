@@ -25,7 +25,7 @@ export default class Planets extends Component {
                                     <div className='col-sm-12 col-lg-4 col-md-6'>
                                         <div className='content'>
                                             <div className='card-img'>
-                                                <img src={planet.img}></img>
+                                                <img src={planet.image}></img>
                                             </div>
                                             <div>
                                                 <h3 className='fs-2 contentName'>{planet.name}</h3>

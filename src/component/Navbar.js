@@ -27,15 +27,11 @@ function Navbar() {
          <Link to="/plants"  className="nav-link">bitkiler</Link>
         </li>
         <li className="nav-item">
-         <Link to="/sbuildings"  className="nav-link">yapılar</Link>
+         <Link to="/buildings"  className="nav-link">yapılar</Link>
         </li>
         <li className="nav-item">
          <Link to="/planets"  className="nav-link">gezegenler</Link>
         </li>
-        <li className="nav-item">
-         <Link to="/admin"  className="nav-link">Admin</Link>
-        </li>
-       
       </ul>
     </div>
   </div>

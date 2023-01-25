@@ -2,19 +2,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 //componetns
-// import Content from './component/Content';
 import Navbar from './component/Navbar';
 //pages 
 import Animal from './pages/Animal';
 import Plants from'./pages/Plants';
 import Planets from './pages/Planets';
-import Sbuildings from './pages/Sbuildings';
+import Buildings from './pages/Buildings';
 import Family from './pages/Family';
 import Home from './pages/Home';
-import Admin from './admin/Admin';
-
-
-
 
 
 function App() {
@@ -28,8 +23,7 @@ function App() {
       <Route path='/plants' element={<Plants/>}></Route>
       <Route path='/planets'  element={<Planets/>} ></Route>
       <Route path='/animals' element={<Animal/>}></Route>
-      <Route path='/sbuildings' element={<Sbuildings/>}></Route>
-      <Route path='/admin' element={<Admin/>}></Route>
+      <Route path='/buildings' element={<Buildings/>}></Route>
       </Routes>
     </BrowserRouter>
 
